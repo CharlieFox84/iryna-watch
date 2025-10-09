@@ -1,0 +1,18 @@
+# OS-specific artifacts
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Optional: GitHub Pages or Jekyll artifacts
+_site/
+.jekyll-cache/
+.jekyll-metadata
+
+# Optional: Netlify deploy previews
+.netlify/
+
+# Optional: future build artifacts
+dist/
+build/
