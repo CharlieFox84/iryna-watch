@@ -10,6 +10,7 @@ Before submitting a pull request from `dev` to `main`, verify the following:
 - [ ] Favicon appears in browser tabs
 - [ ] GitHub Pages preview matches expected layout and content
 - [ ] No console errors or broken links
+- [ ] Test RSS link in the footer to make sure it is up to date [Build Local](./BUILD-LOCAL.md).
 
 ## 🧼 Editorial Integrity
 

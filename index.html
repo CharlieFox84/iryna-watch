@@ -15,19 +15,20 @@
     <meta name="twitter:image" content="https://irynawatch.netlify.app/preview.png">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="theme-color" content="#2c2c2c">
-    <link rel="stylesheet" href="./style.css">
-    <link rel="icon" href="./favicon.ico" type="image/x-icon">
-    <link rel="icon" href="./favicon-96x96.png" type="image/png">
-    <link rel="icon" href="./favicon.svg" type="image/svg+xml">
-    <link rel="apple-touch-icon" href="./apple-touch-icon.png" sizes="180x180">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="icon" href="./assets/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="./assets/favicon-96x96.png" type="image/png">
+    <link rel="icon" href="./assets/favicon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="./assets/apple-touch-icon.png" sizes="180x180">
     <meta name="apple-mobile-web-app-title" content="Iryna-Watch">
     <link rel="manifest" href="./site.webmanifest">
+    <link rel="alternate" type="application/rss+xml" title="Iryna Watch RSS Feed" href="./rss.xml">
   </head>
 
   <body>
     <header class="page-header">
       <h1 class="page-title">Iryna Watch</h1>
-      <img src="memorial.png" alt="Iryna Zarutska" class="memorial-img">
+      <img src="./assets/memorial.png" alt="Iryna Zarutska" class="memorial-img">
       <p class="header-desc">
         All entries are drawn from publicly available court records and verified news sources. This timeline is presented with editorial restraint and deep respect for the victim's family.
       </p>
@@ -76,7 +77,7 @@
       <section class="timeline-card" data-tag="motion">
         <h3>Aug 28, 2025 - Bond Denied & Custody Confirmed</h3>
         <p>Magistrate L. Peters issued a formal release order for Decarlos Brown Jr., confirming that no bond was authorized under North Carolina statute §15A-533(b) due to the severity of the charge. The defendant was ordered to remain in custody at Mecklenburg County Jail and to appear in Courtroom 4330 on August 29, 2025.</p>
-        <p class="details">Details reflect official release order filed on August 28, 2025 under process number RO-25-585551.</p>
+        <small><em>Details reflect official release order filed on August 28, 2025 under process number RO-25-585551.</em></small>
   </section>
 
       <section class="timeline-card" data-tag="hearing">
@@ -87,7 +88,7 @@
       <section class="timeline-card" data-tag="motion">
         <h3>Aug 29, 2025 - Capacity Evaluation Ordered</h3>
         <p>Judge Roy Wiggins signed an order committing Decarlos Brown Jr. to Central Regional Hospital - Butner Campus for a 60-day psychiatric evaluation. The motion questioned the defendant's capacity to proceed, and the court found that a state-level forensic assessment was appropriate under G.S. 15A-1002(b)(2). The evaluation will determine whether the defendant can understand the proceedings and assist in his defense.</p>
-        <img src="eval.png" alt="Court document showing defendant remains in custody" class="img-doc">
+        <img src="./assets/eval.png" alt="Court document showing defendant remains in custody" class="img-doc">
         <small><em>Details reflect official court order filed on August 29, 2025 and served to counsel and hospital staff.</em></small>
         <hr class="timeline-hr">
         <h4 class="eval-conditions">
@@ -153,7 +154,7 @@
   </section>
 
       <section class="timeline-card" data-tag="procedural-motion">
-        <h3>Sep 29 - Oct 3, 2025 - Motion and Amended Order to Compel Medical Records</h3>
+        <h3>Sep 29, 2025 - Motion and Amended Order to Compel Medical Records</h3>
         <p>Defense counsel filed a motion to compel disclosure of medical records relevant to the defendant, citing evidentiary relevance for pre-trial preparation. On October 1, the court issued an amended order refining the request: limiting the date range to January 1 - August 31, 2025, reinforcing HIPAA compliance, and prohibiting public disclosure without further court approval.</p>
         <small><em>This motion is procedural and does not imply any specific condition or outcome. Medical record requests are common in cases where health history may inform legal arguments. A defense objection to the amended order was filed on October 3, 2025; no ruling has been issued</em></small>
   </section>
@@ -211,19 +212,25 @@
   </section>
 
       <section class="timeline-card" data-tag="community">
-        <h3>Pending - Memorial Fund Confirmation</h3>
+        <h3>Sep 16, 2025 - Memorial Fund Confirmation</h3>
         <p>A fundraiser in Iryna Zarutska's memory has been publicly shared, but has not yet been confirmed by the family or their legal representative. This section will be updated if official verification is provided.</p>
   </section>
 
-    </main>
     <footer class="site-footer">
-      Updates reflect publicly available court records. All entries are presented with editorial restraint and respect for the victim's family.<br>
-      <a href="https://portal-nc.tylertech.cloud/Portal/" target="_blank" rel="noopener noreferrer" class="court-link">
-        View official court records via the North Carolina Judicial Branch eCourts Portal
-      </a>
+      <p>Updates reflect publicly available court records. All entries are presented with editorial restraint and respect for the victim's family.
+      </p>
+      <p>
+        <a href="https://portal-nc.tylertech.cloud/Portal/" target="_blank" rel="noopener noreferrer" class="court-link">
+          View official court records via the North Carolina Judicial Branch eCourts Portal
+        </a>
+      </p>
+      <p>
+        <a href="./rss.xml" title="Subscribe to RSS feed"><img src="./assets/rss.svg" alt="RSS Feed" style="width:30px; height:30px;"/>
+        </a>
+      </p>
     </footer>
   
-    <script src="script.js"></script>
+    <script src="./js/script.js"></script>
   
   </body>
 </html>

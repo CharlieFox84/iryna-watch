@@ -1,7 +1,10 @@
 :root {
 --nav-height: 3em;
 }
-
+/* Box-sizing reset for layout sanity */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
 /* Header styles */
 header.page-header {
 text-align: center;
@@ -57,11 +60,24 @@ font-size: 0.9rem;
 color: #666;
 }
 /* Footer styles */
-footer.site-footer {
-text-align: center;
-font-size: 0.9rem;
-color: #666;
-margin-top: 3rem;
+.site-footer {
+  text-align: center;
+  font-size: 0.9rem;
+  color: #666;
+  margin-top: 3rem;
+  padding: 1rem;
+}
+
+.footer-links a {
+  display: inline-block;
+  margin: 0.5em;
+  color: #666;
+  text-decoration: none;
+}
+
+.footer-links a:hover {
+  color: #333;
+  text-decoration: underline;
 }
 .court-link {
 color: #666;
@@ -100,9 +116,11 @@ font-weight: bold;
 color: #222;
 }
 /* Improve contrast for small/em text */
-.timeline-card small em,
-footer {
-color: #444;
+.timeline-card small em {
+  display: block;
+  margin-top: 1em;
+  font-size: 0.9em;
+  color: #555; /* or #444 if preferred */
 }
 .timeline-card {
 background: #fff;
@@ -119,12 +137,6 @@ color: #222;
 .timeline-card p {
 margin-bottom: 0;
 line-height: 1.6;
-}
-.timeline-card small em {
-display: block;
-margin-top: 1em;
-font-size: 0.9em;
-color: #555;
 }
 /* Container styling */
 .timeline-nav {
@@ -166,16 +178,7 @@ background: #f0f0f0;
     text-align: center;
 }
 }
-
 .timeline-hot-topic {
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 6d17598 (Highlight NC House Bill 307 signing with scroll emoji and CSS banner)
-=======
->>>>>>> 6d17598 (Highlight NC House Bill 307 signing with scroll emoji and CSS banner)
   background: #fff8e1;
   border-bottom: 1px solid #ddd;
   padding: 0.75rem 1rem;
@@ -184,59 +187,22 @@ background: #f0f0f0;
   font-size: 1rem;
   border-left: 4px solid #546e7a; /* slate gray */
   margin-bottom: 1em;
-<<<<<<< HEAD
-<<<<<<< HEAD
 }
 
 .hot-topic-link {
-  color: #546e7a; /* matches border */
+  color: #666; /* matches border */
   text-decoration: none;
+  display: inline-block;
+  padding: 0.75rem 1rem;
+  text-align: center;
+  font-weight: bold;
 }
 
 .hot-topic-link:hover {
   text-decoration: underline;
-=======
-=======
->>>>>>> b17a321 (Sperated CSS into its own file)
-background: #fff8e1;
-border-bottom: 1px solid #ddd;
-padding: 0.75rem 1rem;
-text-align: center;
-font-weight: bold;
-<<<<<<< HEAD
-=======
->>>>>>> 6d17598 (Highlight NC House Bill 307 signing with scroll emoji and CSS banner)
-}
-
-.hot-topic-link {
-  color: #546e7a; /* matches border */
-  text-decoration: none;
-}
-
-.hot-topic-link:hover {
-<<<<<<< HEAD
-text-decoration: underline;
->>>>>>> b17a321 (Sperated CSS into its own file)
-=======
-  text-decoration: underline;
->>>>>>> 6d17598 (Highlight NC House Bill 307 signing with scroll emoji and CSS banner)
-=======
-=======
->>>>>>> 6d17598 (Highlight NC House Bill 307 signing with scroll emoji and CSS banner)
-}
-
-.hot-topic-link {
-  color: #546e7a; /* matches border */
-  text-decoration: none;
-}
-
-.hot-topic-link:hover {
-<<<<<<< HEAD
-text-decoration: underline;
->>>>>>> b17a321 (Sperated CSS into its own file)
-=======
-  text-decoration: underline;
->>>>>>> 6d17598 (Highlight NC House Bill 307 signing with scroll emoji and CSS banner)
+  background: #f0f0f0;
+  border-bottom: 1px solid #ddd;
+  color: #666;
 }
 
 .last-updated {
@@ -259,7 +225,6 @@ position: sticky;
 display: flex;
 justify-content: center;
 top: var(--nav-height); /* adjust based on nav height */
-background: #fff;
 border-bottom: 1px solid #ddd;
 background-color: #f9f9f9;
 z-index: 10;
