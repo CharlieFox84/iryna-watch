@@ -39,6 +39,14 @@ cards = sorted_cards
 rss = Element("rss", version="2.0")
 channel = SubElement(rss, "channel")
 
+# Add atom:link for feed self-reference
+atom_link = SubElement(channel, "atom:link", {
+    "href": "https://charliefox84.github.io/iryna-watch/rss.xml",
+    "rel": "self",
+    "type": "application/rss+xml",
+    "xmlns:atom": "http://www.w3.org/2005/Atom"
+})
+
 SubElement(channel, "title").text = "Iryna Watch Updates"
 SubElement(channel, "link").text = "https://irynawatch.netlify.app/"
 SubElement(channel, "description").text = "Updates to the Iryna murder case timeline."
@@ -68,7 +76,13 @@ for section_id, card in cards:
         SubElement(item, "link").text = f"https://irynawatch.netlify.app/#{section_id}"
         SubElement(item, "description").text = f"Category: {section_map.get(section_id, 'Unknown')}. {description}"
         SubElement(item, "pubDate").text = pub_date
-        SubElement(item, "guid").text = title.replace(" ", "-").lower()
+        # Sanitize title for GUID
+        safe_guid = title.replace("[", "(").replace("]", ")").replace(" ", "-").lower()
+
+        # Use isPermaLink="false" to avoid needing full URL
+        guid_tag = SubElement(item, "guid")
+        guid_tag.set("isPermaLink", "false")
+        guid_tag.text = safe_guid
 
 # Save RSS XML
 rss_xml = parseString(tostring(rss)).toprettyxml(indent="  ")
