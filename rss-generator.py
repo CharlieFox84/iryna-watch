@@ -60,8 +60,9 @@ for section_id, card in cards:
     if h3 and p:
         title = h3.get_text(strip=True)
         description = p.get_text(strip=True)
+        description = description.replace("&", "and")
         if small:
-            description += f" <em>{small.get_text(strip=True)}</em>"
+            description += f" ({small.get_text(strip=True)})"
 
         # Extract date from title
         try:
@@ -72,7 +73,7 @@ for section_id, card in cards:
 
         # Build RSS item
         item = SubElement(channel, "item")
-        SubElement(item, "title").text = title
+        SubElement(item, "title").text = title.replace("&", "and")
         SubElement(item, "link").text = f"https://irynawatch.netlify.app/#{section_id}"
         SubElement(item, "description").text = f"Category: {section_map.get(section_id, 'Unknown')}. {description}"
         SubElement(item, "pubDate").text = pub_date
