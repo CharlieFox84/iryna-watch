@@ -16,3 +16,18 @@ _site/
 # Optional: future build artifacts
 dist/
 build/
+
+# Optional: Python dependency or local DB artifacts
+requirements.txt
+*.sqlite
+
+#Python Artifacts
+__pycache__/
+*.pyc
+
+#Local Environment Files
+.env
+
+#Editor/IDE Metadata
+.vscode/
+.idea/
