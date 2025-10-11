@@ -30,12 +30,23 @@ jobs:
       
       - name: Log RSS validation output
         run: |
-            curl -s -F "url=https://raw.githubusercontent.com/charliefox84/iryna-watch/dev/rss.xml" https://validator.w3.org/feed/check.cgi > ./rss-validator.log
+            curl -s \
+              -A "Mozilla/5.0" \
+              --data-urlencode "url=https://raw.githubusercontent.com/charliefox84/iryna-watch/dev/rss.xml" \
+              https://validator.w3.org/feed/check.cgi > rss-validator.log
       
-      - name: Show validator output
+      - name: Parse validator output
         run: |
           echo "Validator output:"
-          cat rss-validator.log || echo "Log not found"  
+          cat rss-validator.log || echo "Log not found"
+
+          if grep -qi "This is a valid RSS feed" rss-validator.log; then
+            echo "✅ RSS feed passed validation."
+          elif grep -qi "Sorry" rss-validator.log; then
+            echo "❌ RSS feed has validation errors."
+          else
+            echo "⚠️ Unable to determine validation status."
+          fi
 
       - name: Push changes
         if: github.ref == 'refs/heads/dev'
