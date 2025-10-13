@@ -34,11 +34,13 @@ jobs:
 
           VALIDATION=$(grep -o "This is a valid RSS feed" rss-validator.log || echo "RSS feed has validation issues")
 
-          MESSAGE="🔎 $VALIDATION\n🧾 Items: $COUNT\n🕓 Updated: $LAST"
+          MESSAGE="🔎 $VALIDATION | 🧾 Items: $COUNT | 🕓 Updated: $LAST"
 
-          curl -s \
+          RESPONSE=$(curl -s \
             --form-string "token=$PUSHOVER_API_TOKEN" \
             --form-string "user=$PUSHOVER_USER_KEY" \
             --form-string "title=RSS Validation" \
             --form-string "message=$MESSAGE" \
-            https://api.pushover.net/1/messages.json
+            https://api.pushover.net/1/messages.json)
+
+          echo "Pushover response: $RESPONSE"
