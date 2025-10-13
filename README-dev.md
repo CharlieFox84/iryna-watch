@@ -1,26 +1,19 @@
 # Iryna Timeline (Dev Branch)
 
-This branch contains experimental features and editorial scaffolding for the Iryna timeline project. All changes here are staged for review before public release.
+This branch contains editorial scaffolding for the Iryna timeline project. All changes here are staged for review before public release.
 
 ### 🧾 Summary
 
-- Reclassified routine filings as `procedural-motion` to streamline default view  
-- Preserved visibility of high-impact motions like medical evaluation  
-- Updated toggle logic and CSS for mobile-first clarity  
-- Corrected header HTML nesting and added dynamic fallback for “Last updated”  
-- Integrated updated favicons for editorial polish and brand consistency
+- Timeline / RSS updates and code hygiene are tested in `dev`. This includes automated code review and manual functionality tests.
+- Feature or experimental changes are developed in their own branch before merging into `dev`.
 
 ---
 
-### 🛠️ October 2025 Updates (Testing → Dev Merge)
+### 🛠️ Release Updates and Testing
 
-- Added scroll emoji 📜 to NC House Bill 307 timeline card title for symbolic clarity  
-- Appended signing date to card footer: “Signed into law on October 3, 2025”  
-- Introduced `.timeline-hot-topic` CSS banner with slate gray accent for dignified emphasis  
-- Linked banner to timeline card via anchor for improved accessibility  
-- Updated medical records motion card to include October 3 defense objection  
-- Extended card date range to reflect full procedural arc  
-- Merged `testing` branch into `dev` with no conflicts
+- Most releases involve timeline and RSS updates or code hygiene.
+- For recent changes and validation history, see [commit.md](./commit.md).
+- Major rewrites or logic changes will be noted here. Otherwise, review the commit log for changes.
 
 ---
 
@@ -53,13 +46,7 @@ Before submitting a pull request to `main`, please follow the steps in [`TESTING
 
 ---
 
-## In Progress
-
-- Procedural filter toggle  
-- Tag structure for grouped events  
-- Glossary module (draft)
-
-## Editorial Notes
+## 🧾 Editorial Notes
 
 - All content is handled with restraint and respect  
 - No public sourcing until verified and approved
