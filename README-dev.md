@@ -50,3 +50,7 @@ Before submitting a pull request to `main`, please follow the steps in [`TESTING
 
 - All content is handled with restraint and respect  
 - No public sourcing until verified and approved
+
+---
+![HTML/CSS/JS](https://badgen.net/endpoint/https://charliefox84.github.io/Iryna-Validation/html.json)
+![RSS Feed](https://badgen.net/endpoint/https://charliefox84.github.io/Iryna-Validation/rss.json)
