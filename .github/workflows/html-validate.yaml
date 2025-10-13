@@ -1,0 +1,56 @@
+name: Lint HTML and Notify
+
+on:
+  push:
+    branches:
+      - dev
+    paths:
+      - index.html
+      - "**/*.css"
+      - "**/*.js"
+      - .github/workflows/validate-html.yml
+
+jobs:
+  lint-html:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Run Super Linter
+        id: lint
+        uses: github/super-linter@v5
+        env:
+          VALIDATE_HTML: true
+          VALIDATE_CSS: true
+          VALIDATE_JAVASCRIPT_ES: true
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Extract timestamp from index.html
+        id: timestamp
+        run: |
+          DATE=$(grep -oP '(?<=<p class="last-updated">Last updated: ).*?(?=</p>)' index.html)
+          echo "Found date: $DATE"
+          echo "date=$DATE" >> $GITHUB_OUTPUT
+
+      - name: Notify via Pushover
+        if: always()
+        env:
+          PUSHOVER_USER_KEY: ${{ secrets.PUSHOVER_USER_KEY }}
+          PUSHOVER_API_TOKEN: ${{ secrets.PUSHOVER_API_TOKEN }}
+        run: |
+          STATUS="${{ job.status }}"
+          DATE="${{ steps.timestamp.outputs.date }}"
+          MESSAGE="🧼 HTML Lint: $STATUS | 🕓 Site Updated: $DATE"
+
+          echo "Sending message: $MESSAGE"
+
+          RESPONSE=$(curl -s -w "\nHTTP_STATUS:%{http_code}" \
+            --form-string "token=$PUSHOVER_API_TOKEN" \
+            --form-string "user=$PUSHOVER_USER_KEY" \
+            --form-string "title=Site Validation" \
+            --form-string "message=$MESSAGE" \
+            https://api.pushover.net/1/messages.json)
+
+          echo "Pushover response: $RESPONSE"
