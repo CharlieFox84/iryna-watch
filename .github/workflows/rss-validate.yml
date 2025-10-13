@@ -29,7 +29,7 @@ jobs:
 
           RSS=$(curl -s https://raw.githubusercontent.com/charliefox84/iryna-watch/dev/rss.xml)
 
-          LAST=$(echo "$RSS" | grep -oP '(?<=<lastUpdated>).*?(?=</lastUpdated>)')
+          LAST=$(echo "$RSS" | grep -oP '(?<=<lastBuildDate>).*?(?=</lastBuildDate>)')
           [ -z "$LAST" ] && LAST="(not found)"
 
           COUNT=$(echo "$RSS" | grep -c "<item>")
