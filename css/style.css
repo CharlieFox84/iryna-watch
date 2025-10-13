@@ -44,7 +44,7 @@ header.page-header {
   max-width: 100%;
   border-radius: 8px;
   margin-top: 1rem;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 10%);
+  box-shadow: 0 2px 4px color-mix(in srgb, black 10%, transparent);
 }
 
 .timeline-card .eval-conditions {
@@ -73,28 +73,6 @@ header.page-header {
 .timeline-card .community-links {
   font-size: 0.9rem;
   color: #666;
-}
-
-/* Footer styles */
-
-.site-footer {
-  text-align: center;
-  font-size: 0.9rem;
-  color: #666;
-  margin-top: 3rem;
-  padding: 1rem;
-}
-
-.footer-links a {
-  display: inline-block;
-  margin: 0.5em;
-  color: #666;
-  text-decoration: none;
-}
-
-.footer-links a:hover {
-  color: #333;
-  text-decoration: underline;
 }
 
 .court-link {
@@ -154,7 +132,7 @@ h1 {
   border-left: 4px solid #888;
   margin: 1rem 0;
   padding: 1rem 1.5rem;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 5%);
+  box-shadow: 0 2px 4px color-mix(in srgb, black 10%, transparent);
 }
 
 .timeline-card h2 {
@@ -209,7 +187,7 @@ h1 {
   background: #f0f0f0;
 }
 
-@media (max-width: 480px) {
+@media (width <= 480px) {
   .timeline-nav a {
     white-space: normal;
     word-break: break-word;
@@ -304,7 +282,7 @@ input[type="checkbox"] {
 }
 
 input[type="checkbox"]:checked {
-  background: #0077cc;
+  background: #07c;
 }
 
 input[type="checkbox"]::before {
@@ -321,4 +299,26 @@ input[type="checkbox"]::before {
 
 input[type="checkbox"]:checked::before {
   left: 22px;
+}
+
+/* Footer styles */
+
+.site-footer {
+  text-align: center;
+  font-size: 0.9rem;
+  color: #666;
+  margin-top: 3rem;
+  padding: 1rem;
+}
+
+.footer-links a {
+  display: inline-block;
+  margin: 0.5em;
+  color: #666;
+  text-decoration: none;
+}
+
+.footer-links a:hover {
+  color: #333;
+  text-decoration: underline;
 }
