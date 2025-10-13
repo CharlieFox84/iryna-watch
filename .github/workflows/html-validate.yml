@@ -8,7 +8,7 @@ on:
       - index.html
       - "**/*.css"
       - "**/*.js"
-      - .github/workflows/validate-html.yml
+      - .github/workflows/html-validate.yml
 
 jobs:
   lint-html:
