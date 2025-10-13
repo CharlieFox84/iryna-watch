@@ -181,7 +181,19 @@ h1 {
   white-space: nowrap;
 }
 
-/* Timeline hover effect (must come before .footer-links a:hover) */
+.footer-links a {
+  display: inline-block;
+  margin: 0.5em;
+  color: #666;
+  text-decoration: none;
+}
+
+.footer-links a:hover {
+  color: #333;
+  text-decoration: underline;
+}
+
+/* Timeline hover effect (must come after .footer-links a:hover) */
 
 .timeline-nav a:hover {
   background: #f0f0f0;
@@ -195,18 +207,6 @@ h1 {
   color: #666;
   margin-top: 3rem;
   padding: 1rem;
-}
-
-.footer-links a {
-  display: inline-block;
-  margin: 0.5em;
-  color: #666;
-  text-decoration: none;
-}
-
-.footer-links a:hover {
-  color: #333;
-  text-decoration: underline;
 }
 
 @media (width <= 480px) {
