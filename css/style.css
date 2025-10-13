@@ -181,10 +181,32 @@ h1 {
   white-space: nowrap;
 }
 
-/* Hover effect */
+/* Timeline hover effect (must come before .footer-links a:hover) */
 
 .timeline-nav a:hover {
   background: #f0f0f0;
+}
+
+/* Footer styles */
+
+.site-footer {
+  text-align: center;
+  font-size: 0.9rem;
+  color: #666;
+  margin-top: 3rem;
+  padding: 1rem;
+}
+
+.footer-links a {
+  display: inline-block;
+  margin: 0.5em;
+  color: #666;
+  text-decoration: none;
+}
+
+.footer-links a:hover {
+  color: #333;
+  text-decoration: underline;
 }
 
 @media (width <= 480px) {
@@ -299,26 +321,4 @@ input[type="checkbox"]::before {
 
 input[type="checkbox"]:checked::before {
   left: 22px;
-}
-
-/* Footer styles */
-
-.site-footer {
-  text-align: center;
-  font-size: 0.9rem;
-  color: #666;
-  margin-top: 3rem;
-  padding: 1rem;
-}
-
-.footer-links a {
-  display: inline-block;
-  margin: 0.5em;
-  color: #666;
-  text-decoration: none;
-}
-
-.footer-links a:hover {
-  color: #333;
-  text-decoration: underline;
 }

@@ -30,7 +30,7 @@ jobs:
       - name: Extract timestamp from index.html
         id: timestamp
         run: |
-          DATE=$(grep -oP '(?<=<p class="last-updated">Last updated: ).*?(?=</p>)' index.html)
+          DATE=$(grep -oP '(?<=<p class="last-updated">Last updated: ).*?(?=</p>)' "$GITHUB_WORKSPACE/index.html")
           echo "Found date: $DATE"
           echo "date=$DATE" >> $GITHUB_OUTPUT
 
