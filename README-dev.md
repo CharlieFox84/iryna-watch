@@ -46,6 +46,15 @@ Before submitting a pull request to `main`, please follow the steps in [`TESTING
 
 ---
 
+## 🧭 Recommended Sequence
+- ✅ Open PR from dev to main
+- ✅ Merge PR and let Netlify deploy main
+- ✅ Confirm deploy success (Netlify dashboard or site check)
+- ✅ Create GitHub release tag (e.g. v1.0.0)
+- ✅ Verify that your site reflects the tag and date correctly
+
+---
+
 ## 🧾 Editorial Notes
 
 - All content is handled with restraint and respect  

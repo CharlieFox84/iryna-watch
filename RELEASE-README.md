@@ -27,7 +27,7 @@ This file documents the release process and editorial standards for the `iryna-w
 
 ---
 
-## 🔄 Release Workflow
+## 🔄 Release Workflow (example)
 
 1. **Merge PR to `main`**
    - Title: `Sync dev to main: finalize RSS feed and editorial infrastructure`
@@ -39,9 +39,9 @@ This file documents the release process and editorial standards for the `iryna-w
    - Target: `main`
    - Description: See above
 
-3. **Auto-update footer**
-   - Footer script fetches latest release tag via GitHub API
-   - Displays: `Release: v1.0-rss-ready`
+3. **Auto-update Last updated**
+   - script fetches latest release tag via GitHub API
+   - Displays: `Last updated: DATE RELEASE-NUMBER`
 
 4. **Deploy via Netlify**
    - Repo: `charliefox84/iryna-watch`
