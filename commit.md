@@ -1,10 +1,17 @@
 ## Change Log (Last 30 Days)
 
-Updated: Mon, Oct 13, 2025  9:01:15 PM
+Updated: Mon, Oct 13, 2025 10:40:04 PM
 
+- Added testing step to check social media preview (033d876)
+- Merge branch 'dev' of https://github.com/CharlieFox84/iryna-watch into dev (4e09bdd)
+- fixed preview image path and added version strategy. (913c27d)
+- Merge branch 'main' into dev (75ca683)
+- added recommend deployment sequence and example workflow (bf3afdf)
+- update change log (6e9e589)
 - feat: dynamically display latest release tag and date from GitHub (2ec589f)
 - update change log (18f11a0)
 - add badgen for RSS and html/css/js (e6c228a)
+- Update README.md (973909b)
 - docs: update readme-dev and add commit log script (8bf8c77)
 - style: finalize selector order for linter compliance (b4bf439)
 - style: reorder hover selectors to satisfy specificity rule (dd0b64c)
@@ -77,6 +84,7 @@ Updated: Mon, Oct 13, 2025  9:01:15 PM
 - chore: test GitHub Action for RSS auto-build (569d3c5)
 - chore: publish v1.0-rss-ready release documentation (9d1aaa5)
 - chore: add cache-control header for rss.xml (b3c2de5)
+- Merge pull request #1 from CharlieFox84/dev (9443eee)
 - docs: add RSS script README and validator badge to main README (1d777b0)
 - chore: finalize RSS feed structure and resolve validator warnings (52842b7)
 - fix: sanitize RSS GUIDs, add atom:link, and validate feed output (445d1e6)
