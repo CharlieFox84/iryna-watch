@@ -14,6 +14,17 @@ Tags should be:
 
 ---
 
+## 🏷️ Versioning Strategy
+
+| Version Type | Example     | Meaning                                                                 |
+|--------------|-------------|-------------------------------------------------------------------------|
+| `v1.0.0`     | Initial release | First public deploy with validated editorial and infrastructure state |
+| `v1.1.0`     | Timeline update | New content added (e.g. new entries, grouped sections, glossary modules) |
+| `v1.0.1`     | Bug fix         | Infrastructure or layout fix that doesn’t alter editorial content       |
+| `v2.0.0`     | Major feature   | Structural rewrite, new modules, or significant editorial framework shift |
+
+---
+
 ## 🐞 Bug Fixes
 
 Use patch-style tags with clear scope:
