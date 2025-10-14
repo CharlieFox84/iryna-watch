@@ -27,13 +27,6 @@ jobs:
           VALIDATE_JAVASCRIPT_ES: true
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Extract timestamp from index.html
-        id: timestamp
-        run: |
-          DATE=$(grep -oP '(?<=<p class="last-updated">Last updated: ).*?(?=</p>)' "$GITHUB_WORKSPACE/index.html")
-          echo "Found date: $DATE"
-          echo "date=$DATE" >> $GITHUB_OUTPUT
-
       - name: Notify via Pushover
         if: always()
         env:
@@ -41,8 +34,7 @@ jobs:
           PUSHOVER_API_TOKEN: ${{ secrets.PUSHOVER_API_TOKEN }}
         run: |
           STATUS="${{ job.status }}"
-          DATE="${{ steps.timestamp.outputs.date }}"
-          MESSAGE="🧼 HTML Lint: $STATUS | 🕓 Site Updated: $DATE"
+          MESSAGE="🧼 HTML Lint: $STATUS"
 
           echo "Sending message: $MESSAGE"
 

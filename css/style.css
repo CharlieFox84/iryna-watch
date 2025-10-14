@@ -250,7 +250,8 @@ h1 {
 
 .last-updated {
   font-size: 0.9rem;
-  font-style: italic;
+  font-weight: 500;
+  letter-spacing: 0.2px;
   color: #444;
   background-color: #f0f0f0;
   padding: 0.3rem 0.6rem;
