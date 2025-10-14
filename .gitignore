@@ -18,7 +18,7 @@ dist/
 build/
 
 # Optional: Python dependency or local DB artifacts
-requirements.txt
+# requirements.txt
 *.sqlite
 
 #Python Artifacts
