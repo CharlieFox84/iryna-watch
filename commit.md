@@ -1,7 +1,9 @@
 ## Change Log (Last 30 Days)
 
-Updated: Mon, Oct 13, 2025 11:06:35 AM
+Updated: Mon, Oct 13, 2025  9:01:15 PM
 
+- feat: dynamically display latest release tag and date from GitHub (2ec589f)
+- update change log (18f11a0)
 - add badgen for RSS and html/css/js (e6c228a)
 - docs: update readme-dev and add commit log script (8bf8c77)
 - style: finalize selector order for linter compliance (b4bf439)
