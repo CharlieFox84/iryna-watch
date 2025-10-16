@@ -22,8 +22,11 @@ header.page-header {
 
 .memorial-img {
   max-width: 280px;
+  height: auto;
+  aspect-ratio: 2 / 3;
   border-radius: 8px;
-  margin-bottom: 1rem;
+  margin: 0 auto 1rem auto;
+  display: block;
 }
 
 .header-desc {
@@ -42,9 +45,12 @@ header.page-header {
 
 .timeline-card .img-doc {
   max-width: 100%;
+  height: auto;
+  aspect-ratio: 85 / 66; /* Matches 680 × 528 */
   border-radius: 8px;
   margin-top: 1rem;
   box-shadow: 0 2px 4px color-mix(in srgb, black 10%, transparent);
+  display: block;
 }
 
 .timeline-card .eval-conditions {
