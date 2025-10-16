@@ -25,7 +25,7 @@ header.page-header {
   height: auto;
   aspect-ratio: 2 / 3;
   border-radius: 8px;
-  margin: 0 auto 1rem auto;
+  margin: 0 auto 1rem;
   display: block;
 }
 
