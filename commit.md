@@ -1,7 +1,12 @@
 ## Change Log (Last 30 Days)
 
-Updated: Fri Oct 17 19:49:51 MST 2025
+Updated: Sat Oct 18 10:58:51 MST 2025
 
+- Update RSS to the latest entries (1c9f095)
+- Refine scroll behavior, padding, and Oct 16 hearing language (7c56564)
+- fix: update Twitter preview image format and apply subtle portrait overlay (0f714ec)
+- update change log to the latest (edd08b9)
+- Make change log script executable (9d3019f)
 - Added the latest timeline update (f15445f)
 - Replace Oct 16 timeline entry with confirmed hearing reset and motion filing (6b68980)
 - update formatting (9765dfe)
