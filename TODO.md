@@ -22,3 +22,8 @@
 - [ ] Add editorial notes to timeline entries for context
 
 ## 🧪 Ideas for future automation or testing
+
+## 🌐 Social Media Metadata
+
+- [x] Update social preview image with new filename to force cache refresh on X (Twitter)
+- [ ] Monitor X cache behavior to confirm new image is picked up in public posts
