@@ -1,7 +1,11 @@
 ## Change Log (Last 30 Days)
 
-Updated: Thu Oct 16 12:16:59 MST 2025
+Updated: Fri Oct 17 19:49:51 MST 2025
 
+- Added the latest timeline update (f15445f)
+- Replace Oct 16 timeline entry with confirmed hearing reset and motion filing (6b68980)
+- update formatting (9765dfe)
+- update change log (546a7ab)
 - Fix CSS shorthand for margin to pass linter (a30bf1b)
 - Fix layout shift and improve image stability (edc67ba)
 - Merge pull request #3 from CharlieFox84/dev (11d4422)
