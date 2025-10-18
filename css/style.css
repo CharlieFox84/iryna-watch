@@ -1,5 +1,15 @@
 :root {
   --nav-height: 3em;
+  --scroll-offset: 100px; 
+}
+
+/* Global behavior */
+html {
+  scroll-behavior: smooth;
+}
+
+[id] {
+  scroll-margin-top: var(--scroll-offset);
 }
 
 /* Box-sizing reset for layout sanity */
