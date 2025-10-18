@@ -1,10 +1,19 @@
 ## Change Log (Last 30 Days)
 
-Updated: Mon, Oct 13, 2025 10:40:04 PM
+Updated: Fri Oct 17 19:49:51 MST 2025
 
+- Added the latest timeline update (f15445f)
+- Replace Oct 16 timeline entry with confirmed hearing reset and motion filing (6b68980)
+- update formatting (9765dfe)
+- update change log (546a7ab)
+- Fix CSS shorthand for margin to pass linter (a30bf1b)
+- Fix layout shift and improve image stability (edc67ba)
+- Merge pull request #3 from CharlieFox84/dev (11d4422)
+- Update change log (5810b17)
 - Added testing step to check social media preview (033d876)
 - Merge branch 'dev' of https://github.com/CharlieFox84/iryna-watch into dev (4e09bdd)
 - fixed preview image path and added version strategy. (913c27d)
+- Merge pull request #2 from CharlieFox84/dev (a8d7235)
 - Merge branch 'main' into dev (75ca683)
 - added recommend deployment sequence and example workflow (bf3afdf)
 - update change log (6e9e589)
