@@ -1,7 +1,12 @@
 ## Change Log (Last 30 Days)
 
-Updated: Sat Oct 18 10:58:51 MST 2025
+Updated: Sat Oct 18 12:39:27 MST 2025
 
+- updated with Social Media headings (c55a052)
+- Add TODO.md for tracking enhancements, bugs, and editorial notes (9c12428)
+- Add TODO.md for tracking enhancements, bugs, and editorial notes (7ec1f3b)
+- Update RSS generator to use timezone-aware UTC datetime (41336d5)
+- Update change log (a5bbe24)
 - Update RSS to the latest entries (1c9f095)
 - Refine scroll behavior, padding, and Oct 16 hearing language (7c56564)
 - fix: update Twitter preview image format and apply subtle portrait overlay (0f714ec)
