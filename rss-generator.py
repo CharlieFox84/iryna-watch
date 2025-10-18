@@ -1,7 +1,7 @@
 from bs4 import BeautifulSoup
 from xml.etree.ElementTree import Element, SubElement, tostring
 from xml.dom.minidom import parseString
-import datetime
+from datetime import datetime, UTC
 
 # Load your HTML file
 with open("index.html", "r", encoding="utf-8") as f:
@@ -50,7 +50,7 @@ atom_link = SubElement(channel, "atom:link", {
 SubElement(channel, "title").text = "Iryna Watch Updates"
 SubElement(channel, "link").text = "https://irynawatch.netlify.app/"
 SubElement(channel, "description").text = "Updates to the Iryna murder case timeline."
-SubElement(channel, "lastBuildDate").text = datetime.datetime.utcnow().strftime("%a, %d %b %Y %H:%M:%S GMT")
+SubElement(channel, "lastBuildDate").text = datetime.now(UTC).strftime("%a, %d %b %Y %H:%M:%S GMT")
 
 for section_id, card in cards:
     h3 = card.find("h3")
@@ -67,9 +67,9 @@ for section_id, card in cards:
         # Extract date from title
         try:
             date_str = title.split(" - ")[0].strip()
-            pub_date = datetime.datetime.strptime(date_str, "%b %d, %Y").strftime("%a, %d %b %Y %H:%M:%S GMT")
+            pub_date = datetime.strptime(date_str, "%b %d, %Y").strftime("%a, %d %b %Y %H:%M:%S GMT")
         except Exception:
-            pub_date = datetime.datetime.utcnow().strftime("%a, %d %b %Y %H:%M:%S GMT")
+            pub_date = datetime.now(UTC).strftime("%a, %d %b %Y %H:%M:%S GMT")
 
         # Build RSS item
         item = SubElement(channel, "item")
