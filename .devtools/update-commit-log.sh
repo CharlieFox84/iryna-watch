@@ -9,7 +9,7 @@
 # Generate a markdown changelog of commits from the last 30 days
 echo -e "# Change Log (Last 30 Days)\n\nUpdated: $(date)\n" > commit.md
 
-git log dev --since="30 days ago" --pretty=format:"- %s (%h)" |
+git log dev --since="30 days ago" --pretty=format:"- %s (%h, %ad)" --date=short |
   sed -E 's|https://github.com/([^/]+/[^ )]+)|**\1**|g' >> commit.md
 
 # Ensure file ends with a newline
