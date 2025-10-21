@@ -1,7 +1,11 @@
 # Change Log (Last 30 Days)
 
-Updated: Mon Oct 20 12:13:06 MST 2025
+Updated: Mon Oct 20 21:01:40 MST 2025
 
+- Infra: Add minimalist 404 page with timeline and GitHub links (3a2d26f)
+- Docs: Added documentation for commit message tags. (571ee70)
+- infra: Corrected the id tag and set the footer link directly to the court docket. (e131ef9)
+- Update change log (ffc598f)
 - RSS: add Oct 20, 2025, Motion for Protective Order (d2e668e)
 - Timeline: add Oct 20, 2025, Motion for Protective Order (d50bca3)
 - Added TODO: Explore Smooth Responsive Navbar. (658f27b)
