@@ -63,3 +63,28 @@ Before submitting a pull request to `main`, please follow the steps in [`TESTING
 ---
 ![HTML/CSS/JS](https://badgen.net/endpoint/https://charliefox84.github.io/Iryna-Validation/html.json)
 ![RSS Feed](https://badgen.net/endpoint/https://charliefox84.github.io/Iryna-Validation/rss.json)
+
+---
+
+### 🏷️ Commit Message Tags
+
+| Tag           | Purpose                                                                 |
+|---------------|-------------------------------------------------------------------------|
+| `Timeline:`   | Updates to timeline entries or editorial content                        |
+| `RSS:`        | Changes to RSS feed structure, content, or syndication logic            |
+| `Infra:`      | Infrastructure-level updates (e.g., links, monitoring, layout scaffolding) |
+| `Style:`      | Visual or CSS changes that affect presentation but not content          |
+| `Meta:`       | Metadata updates (e.g., descriptions, SEO, OpenGraph, canonical links)  |
+| `Docs:`       | Changes to documentation, README, or internal notes                     |
+| `Dev:`        | Tooling, scripts, automation, or developer workflow improvements        |
+
+---
+
+### 🏷️ Example Usage
+
+```
+Infra: Add direct docket link to footer
+Timeline: Draft entry for protective order motion
+RSS: Fix date formatting in feed items
+Dev: Refactor changelog script for clarity
+```
