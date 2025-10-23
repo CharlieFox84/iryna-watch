@@ -1,7 +1,10 @@
 # Change Log (Last 30 Days)
 
-Updated: Mon Oct 20 21:28:45 MST 2025
+Updated: Wed Oct 22 17:02:07 MST 2025
 
+- RSS: Updated RSS to match timeline (5c11670, 2025-10-22)
+- Timeline: Added federal indictment returned entry (d3ecd17, 2025-10-22)
+- Docs: Update change log (03d045f, 2025-10-20)
 - - Infra: Refine commit log script with Markdown formatting and newline compliance (a1b2c3d, 2025-10-20) (5a6d228, 2025-10-20)
 - Docs: Update change log (6edc09f, 2025-10-20)
 - Infra: Refine commit log script with Markdown formatting and newline compliance (bcf0e15, 2025-10-20)
