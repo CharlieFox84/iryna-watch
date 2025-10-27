@@ -1,7 +1,10 @@
 # Change Log (Last 30 Days)
 
-Updated: Wed Oct 22 17:02:07 MST 2025
+Updated: Mon Oct 27 13:34:03 MST 2025
 
+- RSS: update rss to the latest timeline update (7b9bfff, 2025-10-27)
+- Timeline: add Celastrina iryna species entry honoring Iryna Zarutska with image and source link (ded2eba, 2025-10-27)
+- Docs: Update the change log (b078a4e, 2025-10-22)
 - RSS: Updated RSS to match timeline (5c11670, 2025-10-22)
 - Timeline: Added federal indictment returned entry (d3ecd17, 2025-10-22)
 - Docs: Update change log (03d045f, 2025-10-20)
