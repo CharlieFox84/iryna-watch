@@ -25,7 +25,8 @@ Brief description of the changes introduced in this PR. Include context, intent,
 
 ### Testing & Review
 
-- Visual and editorial checks are performed via GitHub Pages.
+- Visual and editorial checks are performed via GitHub Pages (`dev` branch).
+- Netlify Deploy Preview (auto‑generated for each PR) should be tested before merge to confirm production‑like behavior.
 - Procedural cards and hidden tags allow for quiet iteration.
 
 ### Merge to Production (`main`)
