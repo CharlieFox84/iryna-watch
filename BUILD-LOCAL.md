@@ -1,6 +1,7 @@
-## 🛠️ Local Build Instructions (`BUILD-LOCAL.md`)
+# 🛠️ Local Build Instructions (`BUILD-LOCAL.md`)
 
-### Overview
+## Overview
+
 This guide outlines the steps required to build and test the site locally before pushing to `dev`. It ensures that the RSS feed is up-to-date and that all assets are correctly referenced.
 
 ---

@@ -7,6 +7,7 @@ This document outlines the standard process for publishing a release in the `iry
 ## 🧭 When to Create a Release
 
 Create a release when:
+
 - A major feature (e.g. RSS feed, glossary module, timeline expansion) is finalized
 - Editorial or technical hygiene reaches a milestone (e.g. validator compliance, cache tuning)
 - Infrastructure changes affect public deployment (e.g. Netlify config, repo sync)
@@ -17,6 +18,7 @@ Create a release when:
 ## 🏷️ Release Tag Format
 
 Use semantic or descriptive tags:
+
 - `v1.0-rss-ready`
 - `v1.1-glossary-module`
 - `v1.2-cache-tuning`
@@ -27,6 +29,8 @@ Use semantic or descriptive tags:
 ## 📦 Release Checklist
 
 Before publishing a release:
+
+- [ ] Prior to merging PRs, test the Netlify deployment preview
 - [ ] Merge all relevant PRs to `main`
 - [ ] Confirm Netlify deployment is live and accurate
 - [ ] Validate RSS feed via W3C and browser preview
@@ -46,6 +50,7 @@ Before publishing a release:
    - **Target branch**: `main`
    - **Title**: Short summary (e.g. `RSS feed deployed`)
    - **Description**:
+
      ```markdown
      - Validator-compliant RSS feed and generator script
      - Editorial hygiene: ampersand sanitization, scoped GUIDs
@@ -70,6 +75,7 @@ Before publishing a release:
 ## 🧠 Editorial Philosophy
 
 All releases reflect:
+
 - Respectful handling of trauma and legal documentation
 - Transparent infrastructure and contributor clarity
 - Modular, auditable systems for principled participation
