@@ -1,8 +1,7 @@
 # Change Log (Last 30 Days)
 
-Updated: Sat Dec  6 11:56:58 MST 2025
+Updated: Wed Mar 11 09:48:26 MST 2026
 
-- Docs: added Netlify preview testing prior to merging PRs (94ef5bd, 2025-12-06)
-- Docs: Update change log (c99c665, 2025-12-06)
-- RSS: update rss to the latest timeline update (f6677d2, 2025-12-06)
-- Timeline: add Dec 1, 2025 card for Iryna's Law effective date with expanded context sentence (3ce23e1, 2025-12-06)
+- RSS: Updated with the latest timeline changes. (5db07ef, 2026-03-11)
+- Timeline: Added reminder for April 30, 2026 hearing and procedural updates. (74a4e60, 2026-03-11)
+- Docs: Fixed formatting issues (d86080d, 2026-03-11)
