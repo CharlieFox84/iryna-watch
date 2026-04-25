@@ -28,6 +28,12 @@ __pycache__/
 #Local Environment Files
 .env
 
+# Python venv files
+venv
+.venv
+rss-env
+env
+
 #Editor/IDE Metadata
 .vscode/
 .idea/
