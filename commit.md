@@ -1,7 +1,10 @@
 # Change Log (Last 30 Days)
 
-Updated: Sat Apr 25 09:24:11 MST 2026
+Updated: Fri May  8 15:06:51 MST 2026
 
+- RSS: Add May 7th Federal Memo Filed Ahead of Competency Hearing (fea0601, 2026-05-08)
+- Timeline: Add May 7th Federal Memo Filed Ahead of Competency Hearing (c72fc24, 2026-05-08)
+- Docs: Update commit log (fe2b8f4, 2026-04-25)
 - RSS: Update timeline with the latest corrections (deb8dc7, 2026-04-25)
 - Timeline: Fix the footer on the Oct 16, 2025 entry (cf2062e, 2026-04-25)
 - Docs: Update commit log (2d96ba2, 2026-04-25)
