@@ -1,23 +1,6 @@
 # Change Log (Last 30 Days)
 
-Updated: Fri May  8 15:06:51 MST 2026
+Updated: Wed Jun 10 19:20:06 MST 2026
 
-- RSS: Add May 7th Federal Memo Filed Ahead of Competency Hearing (fea0601, 2026-05-08)
-- Timeline: Add May 7th Federal Memo Filed Ahead of Competency Hearing (c72fc24, 2026-05-08)
-- Docs: Update commit log (fe2b8f4, 2026-04-25)
-- RSS: Update timeline with the latest corrections (deb8dc7, 2026-04-25)
-- Timeline: Fix the footer on the Oct 16, 2025 entry (cf2062e, 2026-04-25)
-- Docs: Update commit log (2d96ba2, 2026-04-25)
-- Dev: update gitignore (9486c9b, 2026-04-25)
-- RSS: Update timeline (6c40341, 2026-04-25)
-- Timeline: Fixed headline date from April 30 to 24 when the court made the update. (d3c6062, 2026-04-25)
-- Timeline: Add Rule24 hearing reset for Oct 27 2026. (1e47bc7, 2026-04-25)
-- Docs: Add notes on resync repo (a14d479, 2026-04-25)
-- Docs: Update commit log (f9dcd50, 2026-04-08)
-- RSS: Update April 7 motion (4985b15, 2026-04-08)
-- Timeline: Fixed ascii char issues (e43ff8d, 2026-04-08)
-- Timeline: Fixed timeline entry for apr 7 (0fd1171, 2026-04-08)
-- Dev: Add windows safe shell script for updating the commit log. (6ef5ca8, 2026-04-08)
-- Docs: Update commit log (3d21a78, 2026-04-08)
-- RSS: Add April 7 update (4e3dc25, 2026-04-08)
-- Timeline: Add Apr 7 motion continuing Rule 24 hearing; competency finding and federal custody freeze state proceedings (fde548b, 2026-04-08)
+- RSS: Add Federal comptency ruling (439d4d8, 2026-06-10)
+- Timeline: Add Federal compentency rule (4e4df08, 2026-06-10)
